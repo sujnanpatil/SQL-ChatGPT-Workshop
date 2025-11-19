@@ -22,9 +22,9 @@ In this task, you will deploy an Azure OpenAI model by setting up an instance, c
 
    ![](images/21-06-25-p-1.png)
 
-1. On the **Azure AI services** page, click **Azure OpenAI (1)** under Azure AI services section, then select **+ Create (2)**.
+1. On the **Microsoft Foundry | Azure OpenAI** page, click **Azure OpenAI (1)** under Use with Foundry section, then select **+ Create** drop-down, and select **Azure OpenAI (2)**.
 
-   ![](images/21-06-25-p-1.1.png)
+   ![](images/im-01.png)
 
 1. On the **Basics** tab of **Create Azure OpenAI** page enter the following settings:
    
@@ -35,9 +35,9 @@ In this task, you will deploy an Azure OpenAI model by setting up an instance, c
     - **Pricing tier**: Standard S0 **(5)**
     -  Click **Next** (6)
   
-      ![](images/sql-3.png)
+         ![](images/sql-3.png)
       
-      >**Note:** Kindly select Sweden Central region only as the resources are region-specific.
+         >**Note:** Kindly select Sweden Central region only as the resources are region-specific.
 
 4. Keep the rest as default, click on **Next twice** and subsequently click on **Create**.
 
@@ -58,47 +58,48 @@ Azure OpenAI provides a web-based portal named **Azure AI Foundry portal**, whic
 
    ![](images/21-06-25-p-1.png)
 
-1. On **Azure AI services | Azure OpenAI** blade, select **OpenAI-<inject key="Deployment ID" enableCopy="false"></inject>**
+1. On **Microsoft Foundry | Azure OpenAI** blade, select **OpenAI-<inject key="Deployment ID" enableCopy="false"></inject>**
 
-   ![](images/21-06-25-p-2.png)
+   ![](images/im-02-2.png)
 
-1. In the Azure OpenAI resource pane, click on **Go to Azure AI Foundry portal** it will navigate to **Azure AI Foundry portal**.
+1. In the Azure OpenAI resource pane, click on **Go to Foundry portal** it will navigate to **Foundry portal**.
 
-   ![](images/21-06-25-p-3.png)
+   ![](images/im-03.png)
   
-1. On the **Azure AI Foundry** page, click on **Deployment (1)** from the left naviagtion pane, select the **+ Deploy model (2)** drop down and then click on **Deploy base model (3)**
+1. On the **Microsoft Foundry** page, click on **Deployments (1)** from the left naviagtion pane, select the **+ Deploy model (2)** drop down and then click on **Deploy base model (3)**
 
-   ![](images/sql6.png "Create a new deployment")
+   ![](images/im-04.png "Create a new deployment")
 
    > **Note**: Click on the **Expand** button, if you don't see the left side navigation pane.
 
-   ![](images/code2.png "Keys and Endpoints")             
+   ![](images/code2-2.png "Keys and Endpoints")             
 
-1. On the **Select a model** page, search and select **gpt-35-turbo (1)** and click on **Confirm (2).**
+1. On the **Select a model** page, search and select **gpt-4.1-mini (1)** and click on **Confirm (2).**
 
-   ![](images/sql7.png "Create a new deployment")
+   ![](images/im-05.png "Create a new deployment")
 
-1. On the **Deploy model gpt-35-turbo** pop-up interface, click on **Customize (1)**
+1. On the **Deploy gpt-4.1-mini** pop-up interface, click on **Customize**
    
-   ![](images/21-06-25-p-4.png "Create a new deployment")
+   ![](images/im-06.png "Create a new deployment")
 
    > **Note**: If you dont see the **Customize** option you can go ahead with next step.
 
-1. Within the **Deploy model gpt-35-turbo** pop-up interface, enter the following details and then click on **Deploy (7)** button to deploy a model that you will be playing around with as you proceed.
+1. Within the **Deploy gpt-4.1-mini** pop-up interface, enter the following details and then click on **Deploy (8)** button to deploy a model that you will be playing around with as you proceed.
      
-    - **Deployment name**: gpt-35-turbo **(1)**
+    - **Deployment name**: gpt-4.1-mini **(1)**
     - **Deployment Type**: Standard **(2)**
-    - **Model version**: Select Auto-update to default **(3)**
-    - **Tokens per Minute Rate Limit (thousands)**: 40K **(4)**
-    - **Content Filter**: Default **(5)**
-    -  **Enable Dynamic Quota**: Enabled **(6)**
+    - **Model version upgrade policy**: Upgrade once new default version becomes available **(3)**
+    - **Model version**: 2025-04-14 (Default) **(4)**
+    - **Tokens per Minute Rate Limit (thousands)**: 250K **(5)**
+    - **Content Filter**: Default **(6)**
+    -  **Enable Dynamic Quota**: Enabled **(7)**
    
 
-      ![](images/21-06-25-p-5.png)
+         ![](images/im-07.png)
 
    
 
-    **Note:** Azure OpenAI includes multiple models, each optimized for a different balance of capabilities and performance. In this exercise, you'll use the **GPT-35-Turbo** model, which is a good general model for summarizing and generating natural language and code. For more information about the available models in Azure OpenAI, see [Models](https://learn.microsoft.com/azure/cognitive-services/openai/concepts/models) in the Azure OpenAI documentation.
+         > **Note:** Azure OpenAI includes multiple models, each optimized for a different balance of capabilities and performance. In this exercise, you'll use the **gpt-4.1-mini** model, which is a good general model for summarizing and generating natural language and code. For more information about the available models in Azure OpenAI, see [Models](https://learn.microsoft.com/azure/cognitive-services/openai/concepts/models) in the Azure OpenAI documentation.
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    - If you receive a success message, you can proceed to the next task.
