@@ -90,7 +90,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
    
    * **Password**: <inject key="AzureAdUserPassword"></inject> **(1)**
    
-      ![](images2/pass.png "Enter Password")
+      ![](images2/pwrd1.png "Enter Password")
 
 1. If you see the pop-up **Stay Signed in?**, select **No**.
 
